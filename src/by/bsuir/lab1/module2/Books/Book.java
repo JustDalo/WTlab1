@@ -70,4 +70,9 @@ public class Book {
     public int hashCode() {
         return Objects.hash(this.title, this.author, this.price);
     }
+
+    @Override
+    public Book clone() {
+        return new Book(this.title, this.author, this.price);
+    }
 }
