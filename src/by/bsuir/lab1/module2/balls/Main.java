@@ -2,6 +2,15 @@ package by.bsuir.lab1.module2.balls;
 
 import java.awt.*;
 
+
+//javac -d bin ./src/by/bsuir/lab1/module2/balls/*
+//java -cp ./bin by.bsuir.lab1.module2.balls.Main
+
+//cd bin
+//jar cfe Main.jar by.bsuir.lab1.module2.balls.Main by/bsuir/lab1/module2/balls
+//java -jar Main.jar
+
+
 public class Main {
     public static void main(String[] args) {
         var bin = new Bin();
