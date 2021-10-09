@@ -2,16 +2,18 @@ package by.bsuir.lab1.module2.Books;
 
 import java.util.Objects;
 
-public class Book {
+public class Book implements Comparable<Book>{
     private String title;
     private String author;
     private int price;
     private static int edition;
+    private int isbn;
 
-    public Book(String title, String author, int price){
+    public Book(String title, String author, int price, int isbn){
         this.title = title;
         this.author = author;
         this.price = price;
+        this.isbn = isbn;
     }
 
     public void setTitle(String title){
@@ -46,6 +48,14 @@ public class Book {
         return  edition;
     }
 
+    public void setIsbn(int isbn){
+        this.isbn = isbn;
+    }
+
+    public int getIsbn(){
+        return isbn;
+    }
+
     @Override
     public String toString() {
         return author + " ( " + title + " ) ";
@@ -73,6 +83,11 @@ public class Book {
 
     @Override
     public Book clone() {
-        return new Book(this.title, this.author, this.price);
+        return new Book(this.title, this.author, this.price, this.isbn);
+    }
+
+    @Override
+    public int compareTo(Book object) {
+        return Integer.compare(isbn, object.getIsbn());
     }
 }
