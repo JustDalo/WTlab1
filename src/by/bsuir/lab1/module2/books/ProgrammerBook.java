@@ -1,4 +1,4 @@
-package by.bsuir.lab1.module2.Books;
+package by.bsuir.lab1.module2.books;
 
 import java.util.Objects;
 

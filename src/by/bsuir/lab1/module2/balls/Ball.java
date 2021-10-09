@@ -1,4 +1,4 @@
-package by.bsuir.lab1.module2.Balls;
+package by.bsuir.lab1.module2.balls;
 
 import java.awt.*;
 

@@ -1,8 +1,7 @@
-package by.bsuir.lab1.module2.Balls;
+package by.bsuir.lab1.module2.balls;
 
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Bin {
     public ArrayList<Ball> balls;

@@ -19,7 +19,7 @@ public class ShallSort {
         }
     }
 
-    private static void ShellSort(float[] array) {
+    public static void ShellSort(float[] array) {
         int i = 0;
         while (i < array.length - 1) {
             if (array[i] <= array[i + 1]) {
